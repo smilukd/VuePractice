@@ -16,7 +16,7 @@
     </header>
     <section id="user-goal">
         <h2>My Course Goal</h2>
-        <p>{{ courseGoal }}</p>
+        <p v-html="courseGoal"></p><!--This is how you pass html code into an element, dont use this too often, it can be used to inject malicious code.-->
         <p>{{ outputGoal() }}</p>
         <p>Learn more <a v-bind:href="vueLink" target="_blank">about Vue</a></p>
     </section>
